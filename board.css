@@ -37,9 +37,12 @@
 	padding: 0;
 }
 
-.tank{
+.tankChild{
 	content: url('Images/TankSprite.png');
-	max-width: 35px;
+}
+
+.tank{
+		max-width: 35px;
 	max-height: 35px;
 	position: absolute;
 	-webkit-transition-duration: 1s;
