@@ -1,0 +1,46 @@
+#board{
+	border: 2px solid #c2b8b1;
+	margin: 0;
+	width: 700px;
+	height: 700px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	flex-flow: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	padding: 0;
+}
+
+.container{
+	flex-flow: column;
+  	justify-content: center;
+	height: 100vh;
+	flex-wrap: wrap;
+}
+
+.cell{
+	border: 1px solid rgba(194,184,177,0.5);
+	width: 5%;
+	height: 100%;
+	display: flex;
+	
+}
+.row{
+	height: 5%;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-flow: row;
+	border: none;
+	padding: 0;
+}
+
+.tank{
+	content: url('Images/TankSprite.png');
+	max-width: 35px;
+	max-height: 35px;
+	position: absolute;
+	-webkit-transition-duration: 1s;
+}
