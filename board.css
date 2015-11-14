@@ -46,4 +46,5 @@
 	max-height: 35px;
 	position: absolute;
 	-webkit-transition-duration: 1s;
+	transition-duration: 1s;
 }

@@ -73,7 +73,7 @@ function rotateLeft(tank)
 function moveForward(tank)
 {
 	var t = document.getElementById(tank);
-	direction = t.curRotation % 360;
+	var direction = t.curRotation % 360;
 	direction = direction / 90;
 	
 	if (direction < 0){
@@ -115,7 +115,7 @@ function moveForward(tank)
 function moveBack(tank)
 {
 		var t = document.getElementById(tank);
-	direction = t.curRotation % 360;
+	var direction = t.curRotation % 360;
 	direction = direction / 90;
 	
 	if (direction < 0){
