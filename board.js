@@ -114,5 +114,60 @@ function moveForward(tank)
 
 function moveBack(tank)
 {
+		var t = document.getElementById(tank);
+	direction = t.curRotation % 360;
+	direction = direction / 90;
 	
+	if (direction < 0){
+		direction = 4 + direction;}
+		
+	var x = 0;
+	var y = 0;
+	
+	switch(direction){
+		case (0):
+			y = 35;
+			break;
+		case (1):
+			x = -35;
+			break;
+		case(2):
+			y = -35;
+			break;
+		case (3):
+			x = 35;
+			break;
+	}
+	
+	console.log(x.toString() + y.toString());
+	console.log("Direction" + direction.toString());
+	
+	var finalx = t.x + x;
+	var finaly = t.y + y;
+	if (finalx < 0 || finalx > 700-35)
+		return;
+	if (finaly < 0 || finaly > 700-35)
+		return;
+	t.x = finalx;
+	t.y = finaly;
+	t.transform = "translate(" + finalx + "px, " + finaly + "px)";
+	applyTransform(tank);
+}
+
+function executeMove(key){
+	
+	switch(key){
+		case("w"):
+			moveForward("tank1");
+			break;
+		case("s"):
+			moveBack("tank1");
+			break;
+		case("a"):
+			rotateLeft("tank1");
+			break;
+		case("d"):
+			rotateRight("tank1");
+			break;
+	}
 }
