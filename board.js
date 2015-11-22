@@ -28,7 +28,6 @@ function makeTank(){
 	tankChild.className = "tank tankChild"
 	tankChild.id = "tank1Child";
 	
-
 	tankPar.className = "tank"
 	tankPar.id = "tank1";
 	tankPar.style.top = "0";

@@ -1,0 +1,9 @@
+.viewButtons{
+	min-width: 100px;
+}
+
+.containerBase{
+	margin: auto;
+	margin-top: 75px;
+	width: 60%;	
+}
